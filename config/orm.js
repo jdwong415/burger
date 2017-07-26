@@ -1,19 +1,26 @@
 var connection = require("./connection");
 
-connection.connect(function(err) {
-  if (err) throw err;
-  console.log("connected as id " + connection.threadId);
-});
-
 var orm = {
-  selectAll: function() {
-
+  selectAll: function(tableName, callback) {
+    var sql = "SELECT * FROM ??";
+    connection.query(sql, tableName, function(err, result) {
+      if (err) throw err;
+      callback(result);
+    });
   },
-  insertOne: function() {
-
+  insertOne: function(tableName, vals, callback) {
+    var sql = "INSERT INTO ?? SET ?";
+    connection.query(sql, [tableName, vals], function(err, result) {
+      if (err) throw err;
+      callback(result);
+    });
   },
-  updateOne: function() {
-
+  updateOne: function(tableName, vals, id, callback) {
+    var sql = "UPDATE ?? SET ? WHERE ?"
+    connection.query(sql, [tableName, vals, id], function(err, result) {
+      if (err) throw err;
+      callback(result);
+    });
   }
 };
 
