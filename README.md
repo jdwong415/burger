@@ -16,9 +16,13 @@ A restaurant app that lets users input the names of burgers they like to eat, us
 
 * Open in browser: `http://localhost:8080`
 
-* Answer 10 survey questions 
+* Input the name of the burger you'd like to eat. 
 
-* Find the friend that you've always been looking for.
+* Click on the burger to eat it.
+
+* Enjoy your meal.
+
+* Don't forget to throw away your trash when you've finished eating.
 
 ## Demo
-https://agile-island-75963.herokuapp.com/
+https://dry-waters-73607.herokuapp.com/
