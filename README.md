@@ -1,5 +1,5 @@
 # Burger Time
-A restaurant app that lets users input the names of burgers they like to eat, using Node, Express, MySQL, Handlebars, and an ORM, based on the MVC design pattern.
+A restaurant app that lets users input the names of burgers they like to eat, using Node, Express, and MySQL, based on the MVC design pattern.
 
 ## Prerequisites:
 * Node.js
